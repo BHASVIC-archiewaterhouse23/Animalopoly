@@ -3,7 +3,7 @@ public class Player {
     protected char playingPiece;
     protected int money;
     protected int id;
-    public Player(String name, char playingPiece,int id){
+    public Player(String name, char playingPiece){
         this.name = name;
         this.playingPiece = playingPiece;
         this.money = 500;
@@ -23,11 +23,13 @@ public class Player {
     public int getMoney(){
         return this.money;
     }
-    public int getId(){
-        return this.id;
-    }
+
     public String getName(){
         return this.name;
+    }
+
+    public char getPlayingPiece(){
+        return this.playingPiece;
     }
 
 }
