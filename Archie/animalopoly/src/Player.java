@@ -6,7 +6,7 @@ public class Player {
     public Player(String name, char playingPiece){
         this.name = name;
         this.playingPiece = playingPiece;
-        this.money = 500;
+        this.money = 1000;
         this.id = id;
     }
     public boolean missATurn(){

@@ -4,16 +4,30 @@ public class Main {
         Scanner reader = new Scanner (System.in);
         Card[] deck = new Card[20];
         Player[] player = new Player[5];
+        Dice dice1 = new Dice(6);
+        Dice dice2 = new Dice(6);
         for (int i = 0;i<4;i++) {
             System.out.println("Please enter name and playing piece");
+
             String name = reader.next();
             char piece = reader.next().charAt(0);
             player[i] = new Player(name, piece);
             System.out.println("Your name is:" + player[i].getName() + " Your playing piece is: " + player[i].getPlayingPiece());
         }
-        Animal Jamal = new Animal("cow",30,1);
-        Dice dice1 = new Dice(6);
-        Dice dice2 = new Dice(6);
+        for (int i = 0;i<4;i++){
+            System.out.println("It is "+ player[i].name + "'s turn");
+            if(player[i].money <= 0) {
+                int roll1 = dice1.roll();
+                int roll2 = dice2.roll();
+                System.out.println("You have rolled a "+roll1 + " and a "+roll2);
+                int roll = roll1 + roll2;
+                if(dice1.isDouble(roll1,roll2) == true){
+                    roll = roll * 2;
+                }
+                
+            }
+        }
+
         for (int i = 0; i<=19; i++){
             deck[i] = new Card(i,20);
         }
