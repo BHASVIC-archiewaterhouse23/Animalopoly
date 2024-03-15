@@ -3,11 +3,9 @@ import java.util.Scanner;
 public class MonopolyBoard {
     // Represents the board cells
     private static final String[] BOARD = {
-            "GO", "A1", "Community Chest", "A2", "Income Tax", "B1", "Chance", "B2", "B3",
-            "Jail", "C1", "Utility", "C2", "C3", "Community Chest", "C4", "D1", "Chance",
-            "D2", "D3", "Free Parking", "E1", "Community Chest", "E2", "E3", "Railroad",
-            "F1", "Chance", "F2", "F3", "Jail", "G1", "G2", "Utility", "G3", "Community Chest",
-            "H1", "Chance", "H2", "Luxury Tax", "H3", "Railroad"
+            "Start", "caseoh earthsized hippo ", "jeffery epstein bullet ant", "stephen hawking sloth", "nitroglycerine", "dog", "bent neck giraffe", "shark which cant swim", "bird without wings",
+            "flopper", "golden flopper", "stewie griffin", "RTX 4090", "miss a turn", "pig stressball", "malaysia airlines flight 370", "Kenneth Copeland", "Oceangate Sub",
+            "ted kacynzski", "the aye-aye", "mort", "paul tierney", "cat", "yersinia pestis germ", "Alexander Fleming", "the magna carta"
     };
 
     private int[] playerPositions;
