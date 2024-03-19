@@ -7,7 +7,7 @@ public class MonopolyBoard {
             "flopper", "golden flopper", "stewie griffin", "RTX 4090", "miss a turn", "pig stressball", "malaysia airlines flight 370", "Kenneth Copeland", "Oceangate Sub",
             "ted kacynzski", "the aye-aye", "mort", "paul tierney", "cat", "yersinia pestis germ", "Alexander Fleming", "the magna carta"
     };
-
+    
 
     private int numPlayers;
 
